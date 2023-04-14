@@ -54,86 +54,94 @@ const Home = ()=>{
                 },
 
 ]
-const port = [
-    {
-        name:"connectly",
-        link:"",
-        tags:[{name:"React"},{name:"firebase"},{name:"tailwindcss"},{name:"UI/UX"}],
-        description:"",
-        longdescription:"",
-        image:"https://i.ibb.co/PCVjZVz/1.png",
-    }
-
-]
     return(
 <div className=" text-white bga ">
 
 <NavBar />
-<div className='md:flex sm:grid sm:mt-12 md:mt-32  sm:px-10 md:px-20'>
-<div className=''>
+<div className='md:flex sm:grid sm:mt-12 md:mt-32  sm:px-6 md:px-[10%]'>
+<div className='w-full'>
     {/* text */}
     {/* line */}
-    <div className='flex'>
-    <div className="w-[1rem]  h-[0.1rem] bg-white"></div>
-    <div className='-mt-3 ml-4 text-[#656D72] text-base'>
-    MY NAME IS
-    </div>
-    </div>
-    <div className='text-5xl mt-8 sm:ml-2 md:ml-4'>
-        OMAR<span className='text-[#7E74F1]'> YOUSEF</span>
-    </div>
-    <div className='mt-5 sm:ml-2 md:ml-4 sm:px-2 md:px-0  md:max-w-[40vw] inter text-[#F1F1F1]'>
-    <article>
-        Creative front-end developer with more than +3 years of experience in enterprise companies and startups. Proficient in Html, Tailwind Css, Javascript and React. Passionate about UI/UX
-        </article>
-    </div>
-    <div className='mt-6 ml-4 max-w-[40vw] flex inter text-[#F1F1F1]'>
-    <i href="https://www.instagram.com/luketechy/" class="fa-brands sm:text-3xl md:text-2xl mr-4 cursor-pointer fa-instagram"></i>
-    <i href="https://github.com/o0mrs" class="fa-brands sm:text-3xl md:text-2xl mr-4 cursor-pointer fa-github"></i>
-    <i href="https://twitter.com/o6mrs" class="fa-brands sm:text-3xl md:text-2xl mr-4 cursor-pointer fa-twitter"></i>
-    </div>
+    <div className='flex mt-2'>
+    <div className="avatar lg:flex lg:justify-center w-full">
+  <div className="sm:w-16 lg:w-32 mask mask-circle">
+  <img src='as/zyro-image.png' className=''/>
 
-   
+  </div>
 </div>
-<div className='md:ml-auto grid  place-items-center'>
+    </div>
+    <div className='sm:text-3xl mt-8 sm:leading-[2.7rem] lg:leading-[3rem] lg:flex lg:justify-center Poppins  w-full lg:text-center lg:text-4xl'>
+        <div className='lg:max-w-[50%]'>
+        <span>Software <span className='text-[#7E74F1]'>designer</span>, founder, and amateur astronaut.</span>
+        </div>
+
+        {/* OMAR<span className='text-[#7E74F1]'> YOUSEF</span> */}
+    </div>
+    <div className='mt-5 leading-[1.7rem] lg:flex lg:justify-center w-full lg:text-center Poppins sm:px-2 md:px-0  text-[1.09rem] inter text-[#A1A1AA]'>
+        <div className='lg:max-w-[40vw]'>
+        <article>
+    I'm omar, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.
+    {/* Full stack developer with expertise in React, Node.js, and Databases. Proficient in web design and cyber security. Dedicated to creating scalable and efficient solutions for complex problems.         */}
+    </article>
+        </div>
+
+    </div>
+    <div className='mt-6 ml-4 lg:text-center lg:justify-center w-full  flex inter text-[#F1F1F1]'>
+    <i href='https://www.instagram.com/o0mrs/' className="fa-brands sm:text-3xl md:text-3xl mr-4 cursor-pointer fa-instagram"></i>
+    <i href='https://github.com/o0mrs' className="fa-brands sm:text-3xl md:text-3xl mr-4 cursor-pointer fa-github"></i>
+    <i href='https://twitter.com/o6mrs' className="fa-brands sm:text-3xl md:text-3xl mr-4 cursor-pointer fa-twitter"></i>
+    </div>
+{/* 
+    <div class=" py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <h2 class="text-center text-lg font-semibold leading-8 text-white">Trusted by the world’s most innovative teams</h2>
+    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" width="158" height="48"/>
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Reform" width="158" height="48"/>
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Tuple" width="158" height="48"/>
+      <img class="col-span-2 sm:hidden lg:block max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" width="158" height="48"/>
+      <img class="col-span-2 sm:hidden lg:block col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="Statamic" width="158" height="48"/>
+    </div>
+  </div>
+</div> */}
+
+</div>
+{/* <div className='md:ml-auto grid  place-items-center'>
 
     <div className='md:w-[19rem] sm:w-[64vw]  rounded-xl  -rotate-12 sm:mt-16 md:-mt-10 md:h-[22rem] sm:h-[19rem] bg-[#7E74F1]'>
     <div className='md:w-[19rem] sm:w-[64vw] rounded-xl  rotate-12  md:h-[22rem] sm:h-[19rem] bg-[#eae9e9]'></div>
     </div>
-</div>
+</div> */}
 </div>
 <div className='mt-72   inter font-bold text-3xl text-center'>
 Specialized in
 </div>
 
 <div className='grid place-items-center sm:px-7 mt-20 border-blue-300  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
-<div className='bg-[#fff] md:w-[20rem]  h-[17rem] text-center md:mt-0  rounded-xl'>
-<i class="fa-brands fa-uikit text-[#7E74F1] mt-10 rounded-xl text-xl bg-[#F5F3FE] p-2 "></i>
+<div className='bg-[#ebeaea] md:w-[20rem]  h-[17rem] text-center md:mt-0  rounded-xl'>
+<i className="fa-solid fa-pen-to-square text-[#7E74F1] mt-10 rounded-xl text-xl bg-[#F5F3FE] p-2 "></i>
 <div className='text-[#232E35] text-md mt-3 inter'>
-
 UI/UX Design
 </div>
 <div className='text-[#232E35] mt-7 inter text-sm px-10'>
-Specialized in designing intuitive and visually appealing web and mobile interfaces using Figma, helping to improve user experience.</div>
+UI/UX design is the process of creating intuitive and effective user interfaces and user experiences for digital products.</div>
 </div>
 
-<div className='bg-[#fff] md:w-[20rem] h-[17rem] text-center sm:mt-9 md:mt-0  rounded-xl'>
-<i class="fa-solid fa-laptop text-[#7E74F1] mt-10 rounded-xl text-xl bg-[#F5F3FE] p-2 "></i>
+<div className='bg-[#ebeaea] md:w-[20rem] h-[17rem] text-center sm:mt-9 md:mt-0  rounded-xl'>
+<i className="fa-solid fa-code text-[#7E74F1] mt-10 rounded-xl text-xl bg-[#F5F3FE] p-2 "></i>
 <div className='text-[#232E35] text-md mt-3 inter'>
-
-Frontend
+Full-stack web developer
 </div>
 <div className='text-[#232E35] mt-7 inter text-sm px-10'>
-Skilled in creating visually stunning and responsive frontend using ReactJS, TailwindCSS, and other modern technologies to deliver engaging user experiences.</div>
+Turn what you have in mind of a digital product into reality. For any platform you consider.</div>
 </div>
-<div className='bg-[#fff] md:w-[20rem] h-[17rem] text-center sm:mt-9 md:mt-0  rounded-xl'>
-<i class="fa-solid fa-server text-[#7E74F1] mt-10 rounded-xl text-xl bg-[#F5F3FE] p-2 "></i>
+<div className='bg-[#ebeaea] md:w-[20rem] h-[17rem] text-center sm:mt-9 md:mt-0  rounded-xl'>
+<i className="fa-regular fa-circle-check text-[#7E74F1] mt-10 rounded-xl text-xl bg-[#F5F3FE] p-2 "></i>
 <div className='text-[#232E35] text-md mt-3 inter'>
-Backend
-
+Pentesting
 </div>
 <div className='text-[#232E35] mt-7 inter text-sm px-10'>
-Proficient in creating scalable and efficient server-side logic with ExpressJS or Firebase, powering reliable and high-performing apps.</div>
+Pentesting is the process of testing a website's security to identify vulnerabilities and improve coding for secure websites.</div>
 </div>
 
 </div>
@@ -146,42 +154,62 @@ Proficient in creating scalable and efficient server-side logic with ExpressJS o
     </div>
     <div className='text-3xl font-bold mt-4'>
 Featured <span className='text-[#7E74F1]'>Portfolios</span>
-<div className='text-sm mt-4'>
-    hey, i will add all of them soon i'm working on some update if u would like to see them now dm me on ig
-</div>
     
 </div>
 <div className='grid place-items-center  mt-20 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
-{port.map((gf,i)=>{
-    return (
-        <div className='bg-[#fff] sm:w-[80vw] md:w-[23rem] h-[21.5rem] text-center md:mt-0 flex rounded-xl'>
-<img className='w-full h-full rounded-xl' src={gf.image}/>
-<div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#00000069] rounded-md w-[23rem] h-[21.5rem]  mt-auto'></div>
-<div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#111111af] rounded-b-md w-[23rem] h-[7rem]   mt-auto'>
+<div className='bg-[#fff] sm:w-[80vw] md:w-[25vw]  text-center md:mt-0 flex rounded-xl'>
+<img className='w-full h-full rounded-xl' src='https://cdn.dribbble.com/users/2045817/screenshots/16070106/media/15862d3d16670ad40229e9da6666e551.png?compress=1&resize=1600x1200&vertical=top'/>
+{/* <div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#00000069] rounded-md w-[23rem] h-[20rem]  mt-auto'></div>
+<div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#171616af] rounded-b-md w-[23rem] h-[5.5rem]   mt-auto'>
 <div className='w-full text-left text-[#ffffff] text-sm p-3 plus'>
-{gf.name}
+Estore Website.
 </div>
 <div>
     <div className='flex'>
-{gf.tags.map((gf,i)=>{
-    return(
-        <div className='text-xs  text-[#cbcccd] ml-3 p-1 px-3 bg-[#0202028a] rounded-md border border-[#020202]  plus text-left '>
-        {gf.name}
-    </div>
-    )
-})}
+    <div className='text-xs  text-[#cbcccd] ml-3 p-1 bg-[#0202028a] rounded-md border border-[#020202] w-[2.9rem] plus text-left '>
+    React
+</div>
+   <a href="https://estore-clothes-1.pages.dev/"><i className="fa-solid fa-link text-[#656D72] mt-[0.3rem] cursor-pointer ml-4"></i></a> 
     </div>
 </div>
-<div className="mt-2 flex text-left">
-<a href={gf.link}><i class="fa-solid fa-link text-[#656D72] mt-[0.3rem] cursor-pointer ml-4"></i></a> 
-{/* <div className="text-[#2a3b46] text-sm ml-3 cursor-pointer  mt-0.5">
-    show more
 </div> */}
 </div>
+
+<div className='bg-[#fff] sm:mt-5 sm:w-[80vw] md:w-[25vw]  text-center md:mt-0 flex rounded-xl'>
+<img className='w-full h-full rounded-xl' src="as/connectly.pages.dev_.png"/>
+{/* <div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#00000069] rounded-md w-[23rem] h-[20rem]  mt-auto'></div>
+<div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#171616af] rounded-b-md w-[23rem] h-[5.5rem]   mt-auto'>
+<div className='w-full text-left text-[#ffffff] text-sm p-3 plus'>
+Cars Dashboard Website.
 </div>
+<div>
+    <div className='flex'>
+        <div className='text-xs  text-[#cbcccd] ml-3 p-1 bg-[#0202028a] rounded-md border border-[#020202] w-[2.9rem] plus text-left '>
+    React
 </div>
-    )
-})}
+   <a href="https://estore-clothes-1.pages.dev/"><i className="fa-solid fa-link text-[#656D72] mt-[0.3rem] cursor-pointer ml-4"></i></a> 
+    </div>
+</div>
+</div> */}
+</div>
+<div className='bg-[#fff] sm:mt-5 sm:w-[80vw] md:w-[25vw]  text-center md:mt-0 flex rounded-xl'>
+<img className='w-full h-full rounded-xl' src='https://cdn.dribbble.com/userupload/2845126/file/original-04cc94ee5d9377ac3479f8440c36db1b.png?compress=1&resize=2048x1536'/>
+{/* <div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#00000069] rounded-md w-[23rem] h-[20rem]  mt-auto'></div>
+<div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#171616af] rounded-b-md w-[23rem] h-[5.5rem]   mt-auto'>
+<div className='w-full text-left text-[#ffffff] text-sm p-3 plus'>
+Dashboard Website.
+</div>
+<div>
+    <div className='flex'>
+    <div className='text-xs  text-[#cbcccd] ml-3 p-1 bg-[#0202028a] rounded-md border border-[#020202] w-[2.9rem] plus text-left '>
+    React
+</div>
+   <a href="https://estore-clothes-1.pages.dev/"><i className="fa-solid fa-link text-[#656D72] mt-[0.3rem] cursor-pointer ml-4"></i></a> 
+    </div>
+</div>
+</div> */}
+</div>
+
 </div>
 </div>
 
@@ -189,7 +217,7 @@ Featured <span className='text-[#7E74F1]'>Portfolios</span>
 
 
 {/* wrok */}
-<div className='mt-32 hidden sm:px-10 md:px-20 inter'>
+<div className='mt-32  sm:px-10 md:px-20 inter'>
 <div className='flex'>
     <div className="w-[1rem]  h-[0.1rem] bg-white"></div>
     <div className='-mt-[0.5rem] ml-4 text-[#656D72] text-sm'>
@@ -208,7 +236,7 @@ Featured <span className='text-[#7E74F1]'>Portfolios</span>
 return(
     <div onClick={()=>{settab(i)}} className='bg-[#FFFFFF] font-bold md:w-[13.8rem] h-[3rem] mt-4 flex text-[#7E74F1] text-sm pt-[0.93rem] sm:px-4 md:pl-4 rounded-md'>
     {gf.name}
-    <span className='ml-auto sm:hidden md:block md:mr-4'><i class="fa-solid fa-angle-right"></i></span>
+    <span className='ml-auto sm:hidden md:block md:mr-4'><i className="fa-solid fa-angle-right"></i></span>
     </div>
 )
     }else{
@@ -225,7 +253,7 @@ return(
 })}
     </div>
     <div className='md:hidden px-1 max-w-[100vw] mt-9'>
-    <div class=" focus:outline-none mt-3  elative w-auto max-w-96 flex gap-6 scrollbar-hide snap-x  scroll-p-8 hover:scroll-p-0 will-change-scroll overflow-x-auto ">
+    <div className=" focus:outline-none mt-3  elative w-auto max-w-96 flex gap-6 scrollbar-hide snap-x  scroll-p-8 hover:scroll-p-0 will-change-scroll overflow-x-auto ">
 
 
 {work.map((gf,i)=>{
@@ -233,7 +261,7 @@ return(
 return(
     <div onClick={()=>{settab(i)}} className='bg-[#FFFFFF] font-bold md:w-[13.8rem] h-[3rem] mt-4 flex text-[#7E74F1] text-sm pt-[0.93rem] sm:px-4 md:pl-4 rounded-md'>
     {gf.name}
-    <span className='ml-auto tab snap-normal scrollbar-hide snap-center shrink-0 sm:hidden md:block md:mr-4'><i class="fa-solid fa-angle-right"></i></span>
+    <span className='ml-auto tab snap-normal scrollbar-hide snap-center shrink-0 sm:hidden md:block md:mr-4'><i className="fa-solid fa-angle-right"></i></span>
     </div>
 )
     }else{
