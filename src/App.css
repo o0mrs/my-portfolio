@@ -32,25 +32,10 @@ font-family: 'Roboto', sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
 
-   .dda{
-    font-family: 'Reem Kufi Fun', sans-serif;
 
-   }
-   
-   
-   
-   .gsap-3-logo {
-   width: 20vw;
-   max-width: 150px;
-   position: fixed;
-   bottom: 15px;
-   right: 15px;
-   }
-   .bl{
-    bottom: 0;
-    position: fixed;
-    left: 50px;
-}
 .b{
     -webkit-tap-highlight-color: transparent;
+}
+html {
+  scroll-behavior: smooth;
 }

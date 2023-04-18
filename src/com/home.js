@@ -54,10 +54,65 @@ const Home = ()=>{
                 },
 
 ]
+const posts = [
+    {
+      title: 'Boost your conversion rate',
+      href: '#',
+      category: { name: 'Article', href: '#', color: 'bg-indigo-100 text-indigo-800' },
+      description:
+        'Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.',
+      date: 'Mar 16, 2020',
+      datetime: '2020-03-16',
+      author: {
+        name: 'Paul York',
+        href: '#',
+        imageUrl:
+          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      },
+      readingTime: '6 min',
+    },
+    {
+      title: 'How to use search engine optimization to drive sales',
+      href: '#',
+      category: { name: 'Video', href: '#', color: 'bg-pink-100 text-pink-800' },
+      description:
+        'Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.',
+      date: 'Mar 10, 2020',
+      datetime: '2020-03-10',
+      author: {
+        name: 'Dessie Ryan',
+        href: '#',
+        imageUrl:
+          'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      },
+      readingTime: '4 min',
+    },
+    {
+      title: 'Improve your customer experience',
+      href: '#',
+      category: { name: 'Case Study', href: '#', color: 'bg-green-100 text-green-800' },
+      description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab iure iusto fugiat commodi sequi.',
+      date: 'Feb 12, 2020',
+      datetime: '2020-02-12',
+      author: {
+        name: 'Easer Collins',
+        href: '#',
+        imageUrl:
+          'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      },
+      readingTime: '11 min',
+    },
+  ]
+  
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
+  
     return(
 <div className=" text-white bga ">
 
 <NavBar />
+
 <div className='md:flex sm:grid sm:mt-12 md:mt-32  sm:px-6 md:px-[10%]'>
 <div className='w-full'>
     {/* text */}
@@ -65,14 +120,14 @@ const Home = ()=>{
     <div className='flex mt-2'>
     <div className="avatar lg:flex lg:justify-center w-full">
   <div className="sm:w-16 lg:w-32 mask mask-circle">
-  <img src='as/zyro-image.png' className=''/>
+  <img src='as/me.webp' className=''/>
 
   </div>
 </div>
     </div>
     <div className='sm:text-3xl mt-8 sm:leading-[2.7rem] lg:leading-[3rem] lg:flex lg:justify-center Poppins  w-full lg:text-center lg:text-4xl'>
         <div className='lg:max-w-[50%]'>
-        <span>Software <span className='text-[#7E74F1]'>designer</span>, founder, and amateur astronaut.</span>
+        <span>Software <span className='text-[#7E74F1]'>developer</span>, founder, and rust dev.</span>
         </div>
 
         {/* OMAR<span className='text-[#7E74F1]'> YOUSEF</span> */}
@@ -80,19 +135,21 @@ const Home = ()=>{
     <div className='mt-5 leading-[1.7rem] lg:flex lg:justify-center w-full lg:text-center Poppins sm:px-2 md:px-0  text-[1.09rem] inter text-[#A1A1AA]'>
         <div className='lg:max-w-[40vw]'>
         <article>
-    I'm omar, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.
+    I'm omar, a software developer and entrepreneur based in Jordan. I'm the founder and CEO of <a href='https://mindix.xyz' className='text-[#7E74F1] underline underline-offset-2' target='_blank'>mindix</a>, where we develop technologies that empower regular people to explore space on their own terms.
     {/* Full stack developer with expertise in React, Node.js, and Databases. Proficient in web design and cyber security. Dedicated to creating scalable and efficient solutions for complex problems.         */}
     </article>
         </div>
 
     </div>
     <div className='mt-6 ml-4 lg:text-center lg:justify-center w-full  flex inter text-[#F1F1F1]'>
-    <i href='https://www.instagram.com/o0mrs/' className="fa-brands sm:text-3xl md:text-3xl mr-4 cursor-pointer fa-instagram"></i>
-    <i href='https://github.com/o0mrs' className="fa-brands sm:text-3xl md:text-3xl mr-4 cursor-pointer fa-github"></i>
-    <i href='https://twitter.com/o6mrs' className="fa-brands sm:text-3xl md:text-3xl mr-4 cursor-pointer fa-twitter"></i>
+   <a href='https://www.instagram.com/o0mrs/' target='_blank'> <i  className="fa-brands sm:text-3xl md:text-3xl mr-4 cursor-pointer fa-instagram"></i></a>
+   <a href='https://github.com/o0mrs' target='_blank'>  <i  className="fa-brands sm:text-3xl md:text-3xl mr-4 cursor-pointer fa-github"></i></a>
+   <a href='https://twitter.com/o6mrs' target='_blank'>  <i  className="fa-brands sm:text-3xl md:text-3xl mr-4 cursor-pointer fa-twitter"></i></a>
+   <a href="mailto:omar@mindix.xyz"> <i class="fa-regular fa-envelope  sm:text-3xl md:text-3xl mr-4"></i></a>
+
     </div>
-{/* 
-    <div class=" py-24 sm:py-32">
+{/* trusted by */}
+    {/* <div class=" py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <h2 class="text-center text-lg font-semibold leading-8 text-white">Trusted by the world’s most innovative teams</h2>
     <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
@@ -106,14 +163,9 @@ const Home = ()=>{
 </div> */}
 
 </div>
-{/* <div className='md:ml-auto grid  place-items-center'>
-
-    <div className='md:w-[19rem] sm:w-[64vw]  rounded-xl  -rotate-12 sm:mt-16 md:-mt-10 md:h-[22rem] sm:h-[19rem] bg-[#7E74F1]'>
-    <div className='md:w-[19rem] sm:w-[64vw] rounded-xl  rotate-12  md:h-[22rem] sm:h-[19rem] bg-[#eae9e9]'></div>
-    </div>
-</div> */}
+{/* Specialized in */}
 </div>
-<div className='mt-72   inter font-bold text-3xl text-center'>
+<div id='Specialized' className='pt-72   inter font-bold text-3xl text-center'>
 Specialized in
 </div>
 
@@ -152,7 +204,7 @@ Pentesting is the process of testing a website's security to identify vulnerabil
     MY WORKS
     </div>
     </div>
-    <div className='text-3xl font-bold mt-4'>
+    <div className='text-3xl font-bold pt-4 ' id='Portfolio'>
 Featured <span className='text-[#7E74F1]'>Portfolios</span>
     
 </div>
@@ -217,7 +269,7 @@ Dashboard Website.
 
 
 {/* wrok */}
-<div className='mt-32  sm:px-10 md:px-20 inter'>
+{/* <div className='mt-32  sm:px-10 md:px-20 inter'>
 <div className='flex'>
     <div className="w-[1rem]  h-[0.1rem] bg-white"></div>
     <div className='-mt-[0.5rem] ml-4 text-[#656D72] text-sm'>
@@ -315,8 +367,77 @@ return(
     </div>
 </div>
 
-</div>
-
+</div> */}
+<section class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8">
+  {/* <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div> */}
+  <div class="mx-auto max-w-2xl lg:max-w-4xl">
+    {/* <img class="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" /> */}
+    <figure class="mt-10">
+      <blockquote class="text-center text-xl font-semibold leading-8 text- sm:text-2xl sm:leading-9">
+        <p>“Programmers aren't just techies; they're creators and problem-solvers who translate ideas into working solutions”</p>
+      </blockquote>
+      <figcaption class="mt-10">
+        <img class="mx-auto h-10 w-10 rounded-full" src="/as/me.webp" alt="" />
+        <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+          <div class="font-semibold text-white">Omar Yousef</div>
+          <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-white">
+            <circle cx="1" cy="1" r="1" />
+          </svg>
+          <div class="text-gray-300">CEO of Mindix</div>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+{/* blog posts */}
+{/* <div className=" px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
+      <div className="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-7xl">
+        <div>
+          <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl">From My plog</h2>
+     
+        </div>
+        <div className="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+          {posts.map((post) => (
+            <div key={post.title}>
+              <div>
+                <a href={post.category.href} className="inline-block">
+                  <span
+                    className={classNames(
+                      post.category.color,
+                      'inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium'
+                    )}
+                  >
+                    {post.category.name}
+                  </span>
+                </a>
+              </div>
+              <a href={post.href} className="mt-4 block">
+                <p className="text-xl font-semibold ">{post.title}</p>
+                <p className="mt-3 text-base text-gray-400">{post.description}</p>
+              </a>
+              <div className="mt-6 flex items-center">
+                <div className="flex-shrink-0">
+                  <a href={post.author.href}>
+                    <span className="sr-only">{post.author.name}</span>
+                    <img className="h-10 w-10 rounded-full" src={post.author.imageUrl} alt="" />
+                  </a>
+                </div>
+                <div className="ml-3">
+                  <p className="text-sm font-medium ">
+                    <a href={post.author.href}>{post.author.name}</a>
+                  </p>
+                  <div className="flex space-x-1 text-sm text-gray-400">
+                    <time dateTime={post.datetime}>{post.date}</time>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>{post.readingTime} read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div> */}
 <footer className="footer p-10  mt-52 text-neutral-content">
   <div>
     <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" className="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
@@ -325,9 +446,9 @@ return(
   <div>
     <span className="footer-title">Social</span> 
     <div className="grid grid-flow-col gap-4">
-      <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
-      <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
-      <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+   <a href='https://github.com/o0mrs' target='_blank'>  <i  className="fa-brands sm:text-2xl md:text-2xl mr-4 cursor-pointer fa-github"></i></a>
+   <a href='https://twitter.com/o6mrs' target='_blank'>  <i  className="fa-brands sm:text-2xl md:text-2xl mr-4 cursor-pointer fa-twitter"></i></a>
+   <a href="mailto:omar@mindix.xyz"> <i class="fa-regular fa-envelope  sm:text-2xl md:text-2xl mr-4"></i></a>
     </div>
   </div>
 </footer>
