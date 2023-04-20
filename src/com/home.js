@@ -4,56 +4,39 @@ import NavBar from './parts/navbar';
 const Home = ()=>{
     const [tab, settab] = useState(0)
     const work = [
-        {
-        name:'Apple',
-        long:"Front-end Developer  Apple .Inc",
-        location:'California, United States',
-        time:"Nov 2020 - Present · Full-time",
-        tags:JSON.stringify([{name:'Swift'},{name:'Go'}]),
-        point:JSON.stringify([{name:"Improving overall website performance for mobile users."},{name:"Developing new features for the website."},{name:"Working with the team to improve the website."}])
-        },        
-        {
-        name:'Microsoft',
-        long:"CS Microsoft .Inc",
-        location:'California, United States',
-        time:"Dec 2019 - 2020 · Full-time",
-        tags:JSON.stringify([{name:'React'},{name:'nodejs'}]),
-        point:JSON.stringify([{name:"Developing new features for the website."},{name:"Working with the team to improve the website."},])
-        },
-        {
-            name:'Apple',
-            long:"Front-end Developer  Apple .Inc",
-            location:'California, United States',
-            time:"Nov 2020 - Present · Full-time",
-            tags:JSON.stringify([{name:'Swift'},{name:'Go'}]),
-            point:JSON.stringify([{name:"Improving overall website performance for mobile users."},{name:"Developing new features for the website."},{name:"Working with the team to improve the website."}])
-            },        
-            {
-            name:'Microsoft',
-            long:"CS Microsoft .Inc",
-            location:'California, United States',
-            time:"Dec 2019 - 2020 · Full-time",
-            tags:JSON.stringify([{name:'React'},{name:'nodejs'}]),
-            point:JSON.stringify([{name:"Developing new features for the website."},{name:"Working with the team to improve the website."},])
-            },
-            {
-                name:'Apple',
-                long:"Front-end Developer  Apple .Inc",
-                location:'California, United States',
-                time:"Nov 2020 - Present · Full-time",
-                tags:JSON.stringify([{name:'Swift'},{name:'Go'}]),
-                point:JSON.stringify([{name:"Improving overall website performance for mobile users."},{name:"Developing new features for the website."},{name:"Working with the team to improve the website."}])
-                },        
-                {
-                name:'Microsoft',
-                long:"CS Microsoft .Inc",
-                location:'California, United States',
-                time:"Dec 2019 - 2020 · Full-time",
-                tags:JSON.stringify([{name:'React'},{name:'nodejs'}]),
-                point:JSON.stringify([{name:"Developing new features for the website."},{name:"Working with the team to improve the website."},])
-                },
-
-]
+      {
+        title: 'Mindix',
+        href: '#',
+        category: { name: 'full-stack', href: '#', color: 'bg-indigo-100 text-indigo-800' },
+        description:
+          'Launch with complete anonymity and security. Our servers and web development services are designed to keep your identity safe. We accept crypto payments and do not log any IPs..',
+        date: 'Mar 16, 2020',
+        datetime: '2020-03-16',
+        image:"/as/projects/mindix/mindix.xyz_ (1).png",
+        readingTime: '6 min',
+      },
+      {
+        title: 'Connectly',
+        href: '',
+        category: { name: 'Hardware', href: '#', color: 'bg-pink-100 text-pink-800' },
+        description:
+          'Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.',
+        date: 'Mar 10, 2020',
+        datetime: '2020-03-10',
+        image:"/as/projects/connectly/localhost_5174_.png",
+        readingTime: '4 min',
+      },
+      {
+        title: 'earthquakes alarm system',
+        href: 'https://github.com/o0mrs/esos',
+        category: { name: 'open-source', href: '#', color: 'bg-green-100 text-green-800' },
+        description: 'We will send you a notification when an earthquake happens, depending on the seismic focus you might get around 30 seconds to runaway',
+        date: 'Feb 12, 2020',
+        image:"/as/projects/esos/esos.pages.dev_.png",
+        datetime: '2020-02-12',
+        readingTime: '11 min',
+      },
+    ]
 const posts = [
     {
       title: 'Boost your conversion rate',
@@ -103,7 +86,32 @@ const posts = [
       readingTime: '11 min',
     },
   ]
-  
+  const features = [
+    {
+      name: 'Full-stack web development',
+      description:
+        `Turn what you have in mind of a digital product into reality. For any platform you consider.`,
+      icon: 'fa-solid fa-code',
+    },
+    {
+      name: 'UI/UX Design',
+      description:
+        `UI/UX design is the process of creating intuitive and effective user interfaces and user experiences for digital products.`,
+      icon: 'fa-solid fa-pen-to-square',
+    },
+    {
+      name: 'automation scripts',
+      description:
+        'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      icon: 'fa-solid fa-robot',
+    },
+    {
+      name: 'Pentesting',
+      description:
+       `Pentesting is the process of testing a website's security to identify vulnerabilities and improve coding for secure websites.`,
+      icon: 'fa-regular fa-circle-check',
+    },
+  ]
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
@@ -165,11 +173,40 @@ const posts = [
 </div>
 {/* Specialized in */}
 </div>
-<div id='Specialized' className='pt-72   inter font-bold text-3xl text-center'>
+{/* <div id='Specialized' className='pt-52   inter font-bold text-3xl text-center'>
 Specialized in
-</div>
-
-<div className='grid place-items-center sm:px-7 mt-20 border-blue-300  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
+</div> */}
+<div  id='Specialized' className=" pt-52 ">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:text-center">
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Deploy faster</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          Specialized in
+          </p>
+          {/* <p className="mt-6 text-lg leading-8 text-gray-600">
+            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
+            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+          </p> */}
+        </div>
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl className="grid max-w-xl grid-cols-1 gap-y-10 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            {features.map((feature) => (
+              <div key={feature.name} className="relative pl-16">
+                <dt className="text-base font-semibold leading-7 text-white">
+                  <div className="absolute top-0 left-0 flex h-10 w-10 items-center text-xl justify-center rounded-lg bg-indigo-600">
+                    {/* <feature.icon className="h-6 w-6 text-white" aria-hidden="true" /> */}
+                    <i className={feature.icon}></i>
+                  </div>
+                  {feature.name}
+                </dt>
+                <dd className="mt-2 text-base leading-7 text-gray-400">{feature.description}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </div>
+{/* <div className='grid place-items-center sm:px-7 mt-20 border-blue-300  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
 <div className='bg-[#ebeaea] md:w-[20rem]  h-[17rem] text-center md:mt-0  rounded-xl'>
 <i className="fa-solid fa-pen-to-square text-[#7E74F1] mt-10 rounded-xl text-xl bg-[#F5F3FE] p-2 "></i>
 <div className='text-[#232E35] text-md mt-3 inter'>
@@ -196,73 +233,43 @@ Pentesting
 Pentesting is the process of testing a website's security to identify vulnerabilities and improve coding for secure websites.</div>
 </div>
 
-</div>
+</div> */}
 <div className='mt-32 sm:px-10   md:px-20 inter'>
 <div className='flex'>
     <div className="w-[1rem]  h-[0.1rem] bg-white"></div>
     <div className='-mt-3 ml-4 text-[#656D72] text-base'>
-    MY WORKS
+    MY WORK
     </div>
     </div>
     <div className='text-3xl font-bold pt-4 ' id='Portfolio'>
 Featured <span className='text-[#7E74F1]'>Portfolios</span>
     
 </div>
-<div className='grid place-items-center  mt-20 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
-<div className='bg-[#fff] sm:w-[80vw] md:w-[25vw]  text-center md:mt-0 flex rounded-xl'>
-<img className='w-full h-full rounded-xl' src='https://cdn.dribbble.com/users/2045817/screenshots/16070106/media/15862d3d16670ad40229e9da6666e551.png?compress=1&resize=1600x1200&vertical=top'/>
-{/* <div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#00000069] rounded-md w-[23rem] h-[20rem]  mt-auto'></div>
-<div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#171616af] rounded-b-md w-[23rem] h-[5.5rem]   mt-auto'>
-<div className='w-full text-left text-[#ffffff] text-sm p-3 plus'>
-Estore Website.
-</div>
-<div>
-    <div className='flex'>
-    <div className='text-xs  text-[#cbcccd] ml-3 p-1 bg-[#0202028a] rounded-md border border-[#020202] w-[2.9rem] plus text-left '>
-    React
-</div>
-   <a href="https://estore-clothes-1.pages.dev/"><i className="fa-solid fa-link text-[#656D72] mt-[0.3rem] cursor-pointer ml-4"></i></a> 
-    </div>
-</div>
-</div> */}
-</div>
+<div className="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+          {work.map((post) => (
+            <div key={post.title}>
+              <img className='pb-6 w-full rounded-xl' src={post.image}></img>
 
-<div className='bg-[#fff] sm:mt-5 sm:w-[80vw] md:w-[25vw]  text-center md:mt-0 flex rounded-xl'>
-<img className='w-full h-full rounded-xl' src="as/connectly.pages.dev_.png"/>
-{/* <div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#00000069] rounded-md w-[23rem] h-[20rem]  mt-auto'></div>
-<div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#171616af] rounded-b-md w-[23rem] h-[5.5rem]   mt-auto'>
-<div className='w-full text-left text-[#ffffff] text-sm p-3 plus'>
-Cars Dashboard Website.
-</div>
-<div>
-    <div className='flex'>
-        <div className='text-xs  text-[#cbcccd] ml-3 p-1 bg-[#0202028a] rounded-md border border-[#020202] w-[2.9rem] plus text-left '>
-    React
-</div>
-   <a href="https://estore-clothes-1.pages.dev/"><i className="fa-solid fa-link text-[#656D72] mt-[0.3rem] cursor-pointer ml-4"></i></a> 
-    </div>
-</div>
-</div> */}
-</div>
-<div className='bg-[#fff] sm:mt-5 sm:w-[80vw] md:w-[25vw]  text-center md:mt-0 flex rounded-xl'>
-<img className='w-full h-full rounded-xl' src='https://cdn.dribbble.com/userupload/2845126/file/original-04cc94ee5d9377ac3479f8440c36db1b.png?compress=1&resize=2048x1536'/>
-{/* <div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#00000069] rounded-md w-[23rem] h-[20rem]  mt-auto'></div>
-<div className='md:-ml-[23rem] sm:-ml-[80vw] bg-[#171616af] rounded-b-md w-[23rem] h-[5.5rem]   mt-auto'>
-<div className='w-full text-left text-[#ffffff] text-sm p-3 plus'>
-Dashboard Website.
-</div>
-<div>
-    <div className='flex'>
-    <div className='text-xs  text-[#cbcccd] ml-3 p-1 bg-[#0202028a] rounded-md border border-[#020202] w-[2.9rem] plus text-left '>
-    React
-</div>
-   <a href="https://estore-clothes-1.pages.dev/"><i className="fa-solid fa-link text-[#656D72] mt-[0.3rem] cursor-pointer ml-4"></i></a> 
-    </div>
-</div>
-</div> */}
-</div>
-
-</div>
+              <div>
+                <a href={post.category.href} className="inline-block">
+                  <span
+                    className={classNames(
+                      post.category.color,
+                      'inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium'
+                    )}
+                  >
+                    {post.category.name}
+                  </span>
+                </a>
+                
+              </div>
+              <a href={post.href} className="mt-4 block">
+                <p className="text-xl font-semibold ">{post.title}</p>
+                <p className="mt-3 text-base text-gray-400">{post.description}</p>
+              </a>
+            </div>
+          ))}
+        </div>
 </div>
 
 
