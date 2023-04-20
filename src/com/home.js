@@ -5,20 +5,9 @@ const Home = ()=>{
     const [tab, settab] = useState(0)
     const work = [
       {
-        title: 'Mindix',
-        href: '#',
-        category: { name: 'full-stack', href: '#', color: 'bg-indigo-100 text-indigo-800' },
-        description:
-          'Launch with complete anonymity and security. Our servers and web development services are designed to keep your identity safe. We accept crypto payments and do not log any IPs..',
-        date: 'Mar 16, 2020',
-        datetime: '2020-03-16',
-        image:"/as/projects/mindix/mindix.xyz_ (1).png",
-        readingTime: '6 min',
-      },
-      {
         title: 'Connectly',
         href: '',
-        category: { name: 'Hardware', href: '#', color: 'bg-pink-100 text-pink-800' },
+        category: { name: 'social-media', href: 'https://connectly.pages.dev/', color: 'bg-pink-100 text-pink-800' },
         description:
           'Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.',
         date: 'Mar 10, 2020',
@@ -27,12 +16,44 @@ const Home = ()=>{
         readingTime: '4 min',
       },
       {
+        title: 'Mindix',
+        href: 'https://mindix.xyz',
+        category: { name: 'full-stack', href: '#', color: 'bg-indigo-100 text-indigo-800' },
+        description:
+          'Launch with complete anonymity and security. Our servers and web development services are designed to keep your identity safe. We accept crypto payments and do not log any IPs..',
+        date: 'Mar 16, 2020',
+        datetime: '2020-03-16',
+        image:"/as/projects/mindix/mindix.xyz_ (1).png",
+        readingTime: '6 min',
+      },
+
+      {
         title: 'earthquakes alarm system',
         href: 'https://github.com/o0mrs/esos',
         category: { name: 'open-source', href: '#', color: 'bg-green-100 text-green-800' },
         description: 'We will send you a notification when an earthquake happens, depending on the seismic focus you might get around 30 seconds to runaway',
         date: 'Feb 12, 2020',
         image:"/as/projects/esos/esos.pages.dev_.png",
+        datetime: '2020-02-12',
+        readingTime: '11 min',
+      },
+      {
+        title: 'App landing page',
+        href: 'https://remindme-landing.pages.dev/',
+        category: { name: 'Front-end', href: '#', color: 'bg-green-100 text-green-800' },
+        description: 'a landing page for an app using react and tailwind',
+        date: 'Feb 12, 2020',
+        image:"/as/projects/remindme-app/Thumbnail.png",
+        datetime: '2020-02-12',
+        readingTime: '11 min',
+      },
+      {
+        title: 'VR landing page',
+        href: 'https://hydra-7hm.pages.dev/',
+        category: { name: 'Front-end', href: '#', color: 'bg-green-100 text-green-800' },
+        description: 'a landing page for a vr business built with react and tailwind',
+        date: 'Feb 12, 2020',
+        image:"/as/projects/hydra/Hydra-Desktop-UserView.png",
         datetime: '2020-02-12',
         readingTime: '11 min',
       },
@@ -102,7 +123,7 @@ const posts = [
     {
       name: 'automation scripts',
       description:
-        'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+        'Create scripts to scarpe data automate stuff and more',
       icon: 'fa-solid fa-robot',
     },
     {
